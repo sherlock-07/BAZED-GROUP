@@ -18,7 +18,7 @@
      <div class="flex justify-between items-center h-16">
       <div class="flex items-center cursor-pointer" data-page="home">
        <div class="flex items-center gap-2">
-    <img src="img/logo.jpg" alt="Bazed Group Logo" class="w-10 h-10 object-contain" style="border-radius: 50%;" />
+    <img src="img/logo.jpg" alt="Bazed Group Logo" class="w-10 h-10 object-contain" style="border-radius: 50px;" />
     <span id="nav-company-name" class="text-xl font-bold text-gray-900">Bazed Group</span>
 </div>
       </div>
@@ -29,7 +29,11 @@
      </div>
     </div>
     <div id="mobile-menu" class="mobile-menu md:hidden bg-white border-t">
-     <div class="px-4 pt-2 pb-4 space-y-2"><a href="#home" class="block px-3 py-2 text-gray-700 hover:bg-green-50 rounded active" data-page="home" data-translate="nav_home">Home</a> <a href="#about" class="block px-3 py-2 text-gray-700 hover:bg-green-50 rounded" data-page="about" data-translate="nav_about">About Us</a> <a href="#nafaka" class="block px-3 py-2 text-gray-700 hover:bg-green-50 rounded" data-page="nafaka" data-translate="nav_nafaka">Bazed Nafaka</a> <a href="#feeds" class="block px-3 py-2 text-gray-700 hover:bg-green-50 rounded" data-page="feeds" data-translate="nav_feeds">Animal Feeds</a> <a href="#contact" class="block px-3 py-2 text-gray-700 hover:bg-green-50 rounded" data-page="contact" data-translate="nav_contact">Contact</a>
+     <div class="px-4 pt-2 pb-4 space-y-2"><a href="#home" class="block px-3 py-2 text-gray-700 hover:bg-green-50 rounded active" data-page="home" data-translate="nav_home">Home</a> 
+                                           <a href="#about" class="block px-3 py-2 text-gray-700 hover:bg-green-50 rounded" data-page="about" data-translate="nav_about">About Us</a> 
+                                           <a href="#nafaka" class="block px-3 py-2 text-gray-700 hover:bg-green-50 rounded" data-page="nafaka" data-translate="nav_nafaka">Bazed Nafaka</a> 
+                                           <a href="#feeds" class="block px-3 py-2 text-gray-700 hover:bg-green-50 rounded" data-page="feeds" data-translate="nav_feeds">Animal Feeds</a>
+                                            <a href="#contact" class="block px-3 py-2 text-gray-700 hover:bg-green-50 rounded" data-page="contact" data-translate="nav_contact">Contact</a>
      </div>
     </div>
    </nav>
@@ -483,44 +487,40 @@
       <div class="mb-16">
        <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">Our Product Range</h2>
        <div class="grid md:grid-cols-3 gap-8">
-        <div class="product-card bg-white p-6 rounded-lg shadow-lg border-2 border-green-100">
-         <div class="text-5xl mb-4 text-center">
-          🌾
-         </div>
-         <h3 class="text-2xl font-bold text-gray-900 mb-3 text-center">Maize &amp; Corn</h3>
-         <p class="text-gray-600 mb-4 text-center">High-quality yellow and white maize varieties, perfect for milling and whole grain applications</p>
-         <ul class="text-sm text-gray-700 space-y-2">
-          <li>✓ Premium grade sorting</li>
-          <li>✓ Moisture controlled</li>
-          <li>✓ Aflatoxin tested</li>
-          <li>✓ Bulk &amp; retail packaging</li>
-         </ul>
-        </div>
-        <div class="product-card bg-white p-6 rounded-lg shadow-lg border-2 border-green-100">
-         <div class="text-5xl mb-4 text-center">
-          🌾
-         </div>
-         <h3 class="text-2xl font-bold text-gray-900 mb-3 text-center">Rice &amp; Grains</h3>
-         <p class="text-gray-600 mb-4 text-center">Premium rice varieties and specialty grains sourced from the finest growing regions</p>
-         <ul class="text-sm text-gray-700 space-y-2">
-          <li>✓ Basmati &amp; long grain rice</li>
-          <li>✓ Sorghum &amp; millet</li>
-          <li>✓ Quality assured</li>
-          <li>✓ Various pack sizes</li>
-         </ul>
-        </div>
-        <div class="product-card bg-white p-6 rounded-lg shadow-lg border-2 border-green-100">
-         <div class="text-5xl mb-4 text-center">
+        <!-- BEANS CARD -->
+        <div class="product-card bg-white p-6 rounded-lg shadow-lg border-2 border-green-100 cursor-pointer hover:shadow-xl transition-all" data-page="beans-products">
+         <div class="text-6xl mb-4 text-center">
           🫘
          </div>
-         <h3 class="text-2xl font-bold text-gray-900 mb-3 text-center">Beans &amp; Pulses</h3>
-         <p class="text-gray-600 mb-4 text-center">Nutritious legumes and pulses providing essential proteins and minerals</p>
-         <ul class="text-sm text-gray-700 space-y-2">
-          <li>✓ Red, white &amp; mixed beans</li>
-          <li>✓ Chickpeas &amp; lentils</li>
-          <li>✓ Clean &amp; sorted</li>
-          <li>✓ Long shelf life</li>
-         </ul>
+         <h3 class="text-2xl font-bold text-gray-900 mb-3 text-center">Beans</h3>
+         <p class="text-gray-600 mb-4 text-center">Discover our premium varieties of beans</p>
+         <button class="w-full bg-green-700 hover:bg-green-800 text-white font-semibold py-3 px-6 rounded-lg transition-colors">
+          View Varieties →
+         </button>
+        </div>
+
+        <!-- GRAINS CARD -->
+        <div class="product-card bg-white p-6 rounded-lg shadow-lg border-2 border-green-100 cursor-pointer hover:shadow-xl transition-all" data-page="grains-products">
+         <div class="text-6xl mb-4 text-center">
+          🌾
+         </div>
+         <h3 class="text-2xl font-bold text-gray-900 mb-3 text-center">Grains</h3>
+         <p class="text-gray-600 mb-4 text-center">Explore our finest grain selections</p>
+         <button class="w-full bg-green-700 hover:bg-green-800 text-white font-semibold py-3 px-6 rounded-lg transition-colors">
+          View Varieties →
+         </button>
+        </div>
+
+        <!-- SEEDS AND SPICES CARD -->
+        <div class="product-card bg-white p-6 rounded-lg shadow-lg border-2 border-green-100 cursor-pointer hover:shadow-xl transition-all" data-page="seeds-products">
+         <div class="text-6xl mb-4 text-center">
+          ✨
+         </div>
+         <h3 class="text-2xl font-bold text-gray-900 mb-3 text-center">Seeds &amp; Spices</h3>
+         <p class="text-gray-600 mb-4 text-center">Premium seeds and spices collection</p>
+         <button class="w-full bg-green-700 hover:bg-green-800 text-white font-semibold py-3 px-6 rounded-lg transition-colors">
+          View Varieties →
+         </button>
         </div>
        </div>
       </div><!-- Visual: Storage Facility -->
@@ -589,8 +589,358 @@
       </div>
      </div>
     </section>
-   </div><!-- Bazed Animal Feeds Page -->
-   <div id="feeds-page" class="page"><!-- Feeds Hero with Pasture Visual -->
+   </div>
+
+   <!-- BEANS PRODUCTS PAGE -->
+   <div id="beans-products-page" class="page">
+    <!-- Navigation Back Button -->
+    <div class="bg-white border-b sticky top-16 z-40">
+     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center gap-4">
+      <button class="back-to-nafaka flex items-center gap-2 text-green-700 hover:text-green-900 font-semibold transition-colors">
+       ← Back to Bazed Nafaka
+      </button>
+     </div>
+    </div>
+
+    <!-- Page Header -->
+    <section class="bg-gradient-to-r from-green-700 to-green-600 text-white py-12 px-4">
+     <div class="max-w-7xl mx-auto text-center">
+      <h1 class="text-5xl font-bold mb-4">Premium Beans</h1>
+      <p class="text-xl text-green-100">Discover our finest varieties of high-quality beans</p>
+     </div>
+    </section>
+
+    <!-- Products Grid -->
+    <section class="py-16 px-4 bg-gray-50">
+     <div class="max-w-7xl mx-auto">
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+       <!-- Red Kidney Beans -->
+      <div class="product-variety-card rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-all bg-white">
+       <div class="h-48 flex items-center justify-center bg-gray-100">
+        <img src="https://placehold.co/96x96?text=Red+Kidney" alt="Red Kidney Beans" class="object-contain h-24 w-24" />
+       </div>
+        <div class="p-6">
+         <h3 class="text-2xl font-bold text-gray-900 mb-2">Red Kidney Beans</h3>
+         <p class="text-gray-600 mb-4">High-quality red kidney beans, perfect for stews, soups, and traditional dishes. Rich in protein and essential minerals.</p>
+         <div class="flex gap-2 pt-4 border-t">
+          <span class="px-3 py-1 bg-green-100 text-green-800 text-sm rounded-full">High Protein</span>
+          <span class="px-3 py-1 bg-blue-100 text-blue-800 text-sm rounded-full">Nutritious</span>
+         </div>
+        </div>
+       </div>
+
+       <!-- White Kidney Beans -->
+      <div class="product-variety-card rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-all bg-white">
+       <div class="h-48 flex items-center justify-center bg-gray-100">
+        <img src="https://placehold.co/96x96?text=White+Kidney" alt="White Kidney Beans" class="object-contain h-24 w-24" />
+       </div>
+        <div class="p-6">
+         <h3 class="text-2xl font-bold text-gray-900 mb-2">White Kidney Beans</h3>
+         <p class="text-gray-600 mb-4">Premium white kidney beans with excellent nutritional value. Mild flavor makes them versatile for various cuisines.</p>
+         <div class="flex gap-2 pt-4 border-t">
+          <span class="px-3 py-1 bg-green-100 text-green-800 text-sm rounded-full">Mild Flavor</span>
+          <span class="px-3 py-1 bg-purple-100 text-purple-800 text-sm rounded-full">Versatile</span>
+         </div>
+        </div>
+       </div>
+
+       <!-- Sugar Beans -->
+      <div class="product-variety-card rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-all bg-white">
+       <div class="h-48 flex items-center justify-center bg-yellow-50">
+        <img src="https://placehold.co/96x96?text=Sugar+Beans" alt="Sugar Beans" class="object-contain h-24 w-24" />
+       </div>
+        <div class="p-6">
+         <h3 class="text-2xl font-bold text-gray-900 mb-2">Sugar Beans</h3>
+         <p class="text-gray-600 mb-4">Sweet and tender beans ideal for traditional dishes. Known for their delicate texture and slightly sweet flavor profile.</p>
+         <div class="flex gap-2 pt-4 border-t">
+          <span class="px-3 py-1 bg-green-100 text-green-800 text-sm rounded-full">Sweet Taste</span>
+          <span class="px-3 py-1 bg-yellow-100 text-yellow-800 text-sm rounded-full">Tender</span>
+         </div>
+        </div>
+       </div>
+
+       <!-- Soy Beans -->
+      <div class="product-variety-card rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-all bg-white">
+       <div class="h-48 flex items-center justify-center bg-amber-50">
+        <img src="https://placehold.co/96x96?text=Soy+Beans" alt="Soy Beans" class="object-contain h-24 w-24" />
+       </div>
+        <div class="p-6">
+         <h3 class="text-2xl font-bold text-gray-900 mb-2">Soy Beans</h3>
+         <p class="text-gray-600 mb-4">Versatile soy beans rich in protein and nutrients. Perfect for plant-based diets and industrial applications.</p>
+         <div class="flex gap-2 pt-4 border-t">
+          <span class="px-3 py-1 bg-green-100 text-green-800 text-sm rounded-full">High Protein</span>
+          <span class="px-3 py-1 bg-orange-100 text-orange-800 text-sm rounded-full">Plant-based</span>
+         </div>
+        </div>
+       </div>
+
+       <!-- Yellow Beans -->
+      <div class="product-variety-card rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-all bg-white">
+       <div class="h-48 flex items-center justify-center bg-yellow-100">
+        <img src="https://placehold.co/96x96?text=Yellow+Beans" alt="Yellow Beans" class="object-contain h-24 w-24" />
+       </div>
+        <div class="p-6">
+         <h3 class="text-2xl font-bold text-gray-900 mb-2">Yellow Beans</h3>
+         <p class="text-gray-600 mb-4">Vibrant yellow beans with excellent taste and texture. Rich in fiber and essential nutrients for healthy living.</p>
+         <div class="flex gap-2 pt-4 border-t">
+          <span class="px-3 py-1 bg-green-100 text-green-800 text-sm rounded-full">Rich Fiber</span>
+          <span class="px-3 py-1 bg-yellow-100 text-yellow-800 text-sm rounded-full">Vibrant</span>
+         </div>
+        </div>
+       </div>
+
+       <!-- Coffee Beans -->
+      <div class="product-variety-card rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-all bg-white">
+       <div class="h-48 flex items-center justify-center bg-amber-100">
+        <img src="https://placehold.co/96x96?text=Coffee+Beans" alt="Coffee Beans" class="object-contain h-24 w-24" />
+       </div>
+        <div class="p-6">
+         <h3 class="text-2xl font-bold text-gray-900 mb-2">Coffee Beans</h3>
+         <p class="text-gray-600 mb-4">Premium coffee beans for the finest brew. Carefully selected and processed for optimal flavor and aroma.</p>
+         <div class="flex gap-2 pt-4 border-t">
+          <span class="px-3 py-1 bg-amber-100 text-amber-800 text-sm rounded-full">Premium Grade</span>
+          <span class="px-3 py-1 bg-brown-100 text-brown-800 text-sm rounded-full">Aromatic</span>
+         </div>
+        </div>
+       </div>
+
+       <!-- Black Beans -->
+      <div class="product-variety-card rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-all bg-white">
+       <div class="h-48 flex items-center justify-center bg-gray-200">
+        <img src="https://placehold.co/96x96?text=Black+Beans" alt="Black Beans" class="object-contain h-24 w-24" />
+       </div>
+        <div class="p-6">
+         <h3 class="text-2xl font-bold text-gray-900 mb-2">Black Beans</h3>
+         <p class="text-gray-600 mb-4">Rich and flavorful black beans for diverse cuisines. Packed with antioxidants and essential nutrients.</p>
+         <div class="flex gap-2 pt-4 border-t">
+          <span class="px-3 py-1 bg-green-100 text-green-800 text-sm rounded-full">Antioxidants</span>
+          <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">Rich Flavor</span>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="bg-green-50 py-16 px-4">
+     <div class="max-w-7xl mx-auto text-center">
+      <h2 class="text-3xl font-bold text-gray-900 mb-4">Ready to Order?</h2>
+      <p class="text-gray-600 mb-8 text-lg">Contact us for pricing, availability, and bulk order inquiries</p>
+      <button class="bg-green-700 hover:bg-green-800 text-white font-semibold py-4 px-8 rounded-lg transition-colors" data-page="contact">Get in Touch</button>
+     </div>
+    </section>
+   </div>
+
+   <!-- GRAINS PRODUCTS PAGE -->
+   <div id="grains-products-page" class="page">
+    <!-- Navigation Back Button -->
+    <div class="bg-white border-b sticky top-16 z-40">
+     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center gap-4">
+      <button class="back-to-nafaka flex items-center gap-2 text-green-700 hover:text-green-900 font-semibold transition-colors">
+       ← Back to Bazed Nafaka
+      </button>
+     </div>
+    </div>
+
+    <!-- Page Header -->
+    <section class="bg-gradient-to-r from-green-700 to-green-600 text-white py-12 px-4">
+     <div class="max-w-7xl mx-auto text-center">
+      <h1 class="text-5xl font-bold mb-4">Premium Grains</h1>
+      <p class="text-xl text-green-100">Explore our finest grain selections from trusted sources</p>
+     </div>
+    </section>
+
+    <!-- Products Grid -->
+    <section class="py-16 px-4 bg-gray-50">
+     <div class="max-w-7xl mx-auto">
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+       <!-- White Maize -->
+      <div class="product-variety-card rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-all bg-white">
+       <div class="h-48 flex items-center justify-center bg-gray-100">
+        <img src="https://placehold.co/96x96?text=White+Maize" alt="White Maize" class="object-contain h-24 w-24" />
+       </div>
+        <div class="p-6">
+         <h3 class="text-2xl font-bold text-gray-900 mb-2">White Maize</h3>
+         <p class="text-black-600 mb-4">Premium white maize for milling and whole grain applications. Perfect for porridge, meal, and industrial uses.</p>
+         <div class="flex gap-2 pt-4 border-t">
+          <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">Premium Grade</span>
+          <span class="px-3 py-1 bg-blue-100 text-blue-800 text-sm rounded-full">Versatile</span>
+         </div>
+        </div>
+       </div>
+
+       <!-- Yellow Maize -->
+      <div class="product-variety-card rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-all bg-white">
+       <div class="h-48 flex items-center justify-center bg-yellow-100">
+        <img src="https://placehold.co/96x96?text=Yellow+Maize" alt="Yellow Maize" class="object-contain h-24 w-24" />
+       </div>
+        <div class="p-6">
+         <h3 class="text-2xl font-bold text-gray-900 mb-2">Yellow Maize</h3>
+         <p class="text-gray-600 mb-4">High-quality yellow maize with excellent nutritional profile. Rich in carotenoids and essential nutrients.</p>
+         <div class="flex gap-2 pt-4 border-t">
+          <span class="px-3 py-1 bg-green-100 text-green-800 text-sm rounded-full">Nutritious</span>
+          <span class="px-3 py-1 bg-yellow-100 text-yellow-800 text-sm rounded-full">Golden</span>
+         </div>
+        </div>
+       </div>
+
+       <!-- White Sorghum -->
+      <div class="product-variety-card rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-all bg-white">
+       <div class="h-48 flex items-center justify-center bg-stone-100">
+        <img src="https://placehold.co/96x96?text=White+Sorghum" alt="White Sorghum" class="object-contain h-24 w-24" />
+       </div>
+        <div class="p-6">
+         <h3 class="text-2xl font-bold text-gray-900 mb-2">White Sorghum</h3>
+         <p class="text-gray-600 mb-4">Nutritious white sorghum perfect for various applications. Gluten-free and suitable for multiple cuisines.</p>
+         <div class="flex gap-2 pt-4 border-t">
+          <span class="px-3 py-1 bg-green-100 text-green-800 text-sm rounded-full">Gluten-free</span>
+          <span class="px-3 py-1 bg-stone-100 text-stone-800 text-sm rounded-full">Ancient Grain</span>
+         </div>
+        </div>
+       </div>
+
+       <!-- Red Sorghum -->
+      <div class="product-variety-card rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-all bg-white">
+       <div class="h-48 flex items-center justify-center bg-red-100">
+        <img src="img/logo.jpg" alt="Red Sorghum" class="object-contain h-24 w-24" />
+       </div>
+        <div class="p-6">
+         <h3 class="text-2xl font-bold text-gray-900 mb-2">Red Sorghum</h3>
+         <p class="text-gray-600 mb-4">Rich red sorghum with premium quality standards. High in antioxidants and perfect for health-conscious consumers.</p>
+         <div class="flex gap-2 pt-4 border-t">
+          <span class="px-3 py-1 bg-red-100 text-red-800 text-sm rounded-full">Antioxidants</span>
+          <span class="px-3 py-1 bg-green-100 text-green-800 text-sm rounded-full">Premium</span>
+         </div>
+        </div>
+       </div>
+
+       <!-- Rice -->
+      <div class="product-variety-card rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-all bg-white">
+       <div class="h-48 flex items-center justify-center bg-amber-50">
+        <img src="https://placehold.co/96x96?text=Rice" alt="Rice" class="object-contain h-24 w-24" />
+       </div>
+        <div class="p-6">
+         <h3 class="text-2xl font-bold text-gray-900 mb-2">Rice</h3>
+         <p class="text-gray-600 mb-4">Aromatic long-grain rice from the finest growing regions. Perfect for various dishes with consistent quality.</p>
+         <div class="flex gap-2 pt-4 border-t">
+          <span class="px-3 py-1 bg-amber-100 text-amber-800 text-sm rounded-full">Long-grain</span>
+          <span class="px-3 py-1 bg-blue-100 text-blue-800 text-sm rounded-full">Aromatic</span>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="bg-green-50 py-16 px-4">
+     <div class="max-w-7xl mx-auto text-center">
+      <h2 class="text-3xl font-bold text-gray-900 mb-4">Ready to Order?</h2>
+      <p class="text-gray-600 mb-8 text-lg">Contact us for pricing, availability, and bulk order inquiries</p>
+      <button class="bg-green-700 hover:bg-green-800 text-white font-semibold py-4 px-8 rounded-lg transition-colors" data-page="contact">Get in Touch</button>
+     </div>
+    </section>
+   </div>
+
+   <!-- SEEDS & SPICES PRODUCTS PAGE -->
+   <div id="seeds-products-page" class="page">
+    <!-- Navigation Back Button -->
+    <div class="bg-white border-b sticky top-16 z-40">
+     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center gap-4">
+      <button class="back-to-nafaka flex items-center gap-2 text-green-700 hover:text-green-900 font-semibold transition-colors">
+       ← Back to Bazed Nafaka
+      </button>
+     </div>
+    </div>
+
+    <!-- Page Header -->
+    <section class="bg-gradient-to-r from-green-700 to-green-600 text-white py-12 px-4">
+     <div class="max-w-7xl mx-auto text-center">
+      <h1 class="text-5xl font-bold mb-4">Premium Seeds &amp; Spices</h1>
+      <p class="text-xl text-green-100">Discover our finest selection of seeds and spices</p>
+     </div>
+    </section>
+
+    <!-- Products Grid -->
+    <section class="py-16 px-4 bg-gray-50">
+     <div class="max-w-7xl mx-auto">
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+       <!-- Sunflower Seeds -->
+      <div class="product-variety-card rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-all bg-white">
+       <div class="h-48 flex items-center justify-center bg-yellow-100">
+        <img src="https://placehold.co/96x96?text=Sunflower" alt="Sunflower Seeds" class="object-contain h-24 w-24" />
+       </div>
+        <div class="p-6">
+         <h3 class="text-2xl font-bold text-gray-900 mb-2">Sunflower Seeds</h3>
+         <p class="text-gray-600 mb-4">Premium sunflower seeds rich in nutrients and oil content. Perfect for snacking and industrial oil production.</p>
+         <div class="flex gap-2 pt-4 border-t">
+          <span class="px-3 py-1 bg-yellow-100 text-yellow-800 text-sm rounded-full">Oil Rich</span>
+          <span class="px-3 py-1 bg-green-100 text-green-800 text-sm rounded-full">Nutritious</span>
+         </div>
+        </div>
+       </div>
+
+       <!-- Sesame Seeds -->
+      <div class="product-variety-card rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-all bg-white">
+       <div class="h-48 flex items-center justify-center bg-amber-100">
+        <img src="https://placehold.co/96x96?text=Sesame" alt="Sesame Seeds" class="object-contain h-24 w-24" />
+       </div>
+        <div class="p-6">
+         <h3 class="text-2xl font-bold text-gray-900 mb-2">Sesame Seeds</h3>
+         <p class="text-gray-600 mb-4">High-quality sesame seeds for culinary and industrial use. Rich in minerals and perfect for multiple applications.</p>
+         <div class="flex gap-2 pt-4 border-t">
+          <span class="px-3 py-1 bg-amber-100 text-amber-800 text-sm rounded-full">Mineral Rich</span>
+          <span class="px-3 py-1 bg-purple-100 text-purple-800 text-sm rounded-full">Versatile</span>
+         </div>
+        </div>
+       </div>
+
+       <!-- Cloves -->
+      <div class="product-variety-card rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-all bg-white">
+       <div class="h-48 flex items-center justify-center bg-orange-100">
+        <img src="https://placehold.co/96x96?text=Cloves" alt="Cloves" class="object-contain h-24 w-24" />
+       </div>
+        <div class="p-6">
+         <h3 class="text-2xl font-bold text-gray-900 mb-2">Cloves</h3>
+         <p class="text-gray-600 mb-4">Aromatic cloves with authentic flavor and medicinal properties. Essential spice for traditional and modern cooking.</p>
+         <div class="flex gap-2 pt-4 border-t">
+          <span class="px-3 py-1 bg-orange-100 text-orange-800 text-sm rounded-full">Aromatic</span>
+          <span class="px-3 py-1 bg-green-100 text-green-800 text-sm rounded-full">Medicinal</span>
+         </div>
+        </div>
+       </div>
+
+       <!-- Green Cardamom -->
+      <div class="product-variety-card rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-all bg-white">
+       <div class="h-48 flex items-center justify-center bg-green-100">
+        <img src="https://placehold.co/96x96?text=Cardamom" alt="Green Cardamom" class="object-contain h-24 w-24" />
+       </div>
+        <div class="p-6">
+         <h3 class="text-2xl font-bold text-gray-900 mb-2">Green Cardamom</h3>
+         <p class="text-gray-600 mb-4">Premium green cardamom for enhanced taste and aroma. Widely used in both sweet and savory cuisines.</p>
+         <div class="flex gap-2 pt-4 border-t">
+          <span class="px-3 py-1 bg-green-100 text-green-800 text-sm rounded-full">Aromatic</span>
+          <span class="px-3 py-1 bg-blue-100 text-blue-800 text-sm rounded-full">Premium</span>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="bg-green-50 py-16 px-4">
+     <div class="max-w-7xl mx-auto text-center">
+      <h2 class="text-3xl font-bold text-gray-900 mb-4">Ready to Order?</h2>
+      <p class="text-gray-600 mb-8 text-lg">Contact us for pricing, availability, and bulk order inquiries</p>
+      <button class="bg-green-700 hover:bg-green-800 text-white font-semibold py-4 px-8 rounded-lg transition-colors" data-page="contact">Get in Touch</button>
+     </div>
+    </section>
+   </div>
+
+   <!-- Bazed Animal Feeds Page -->
+   <div id="feeds-page" class="page">
     <section class="py-16 px-4 bg-gradient-to-br from-emerald-50 to-green-100 relative overflow-hidden">
      <svg class="absolute inset-0 w-full h-full opacity-40" viewbox="0 0 1200 400" fill="none"><!-- Rolling pasture hills --> <ellipse cx="300" cy="350" rx="400" ry="100" fill="#86EFAC" /> <ellipse cx="700" cy="370" rx="450" ry="110" fill="#4ADE80" /> <ellipse cx="1000" cy="360" rx="350" ry="90" fill="#22C55E" /> <!-- Fence --> <line x1="0" y1="250" x2="1200" y2="250" stroke="#78350F" stroke-width="4" /> <rect x="100" y="220" width="8" height="35" fill="#78350F" /> <rect x="200" y="220" width="8" height="35" fill="#78350F" /> <rect x="300" y="220" width="8" height="35" fill="#78350F" /> <rect x="400" y="220" width="8" height="35" fill="#78350F" /> <rect x="500" y="220" width="8" height="35" fill="#78350F" /> <rect x="600" y="220" width="8" height="35" fill="#78350F" /> <!-- Grazing cows silhouette --> <g opacity="0.6">
        <ellipse cx="200" cy="280" rx="35" ry="25" fill="#8B4513" />
@@ -617,45 +967,62 @@
      <div class="max-w-7xl mx-auto">
       <div class="mb-16">
        <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">Our Feed Solutions</h2>
-       <div class="grid md:grid-cols-3 gap-8">
-        <div class="product-card bg-white p-6 rounded-lg shadow-lg border-2 border-gray-200">
-         <div class="text-5xl mb-4 text-center">
-          🐄
+       <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="product-card bg-white p-6 rounded-lg shadow-lg border-2 border-gray-200 flex flex-col justify-between">
+         <div>
+          <div class="text-5xl mb-4 text-center">🐔</div>
+          <h3 class="text-2xl font-bold text-gray-900 mb-3 text-center">Poultry Feeds</h3>
+          <p class="text-gray-600 mb-4 text-center">Complete nutrition for layers, broilers, and breeding stock</p>
+          <ul class="text-sm text-gray-700 space-y-2 mb-4">
+           <li>✓ Starter, grower &amp; finisher</li>
+           <li>✓ Layer mash formulations</li>
+           <li>✓ Disease prevention support</li>
+           <li>✓ Consistent egg production</li>
+          </ul>
          </div>
-         <h3 class="text-2xl font-bold text-gray-900 mb-3 text-center">Dairy Feeds</h3>
-         <p class="text-gray-600 mb-4 text-center">Specially formulated to maximize milk production and maintain cow health</p>
-         <ul class="text-sm text-gray-700 space-y-2">
-          <li>✓ High energy formulation</li>
-          <li>✓ Calcium &amp; mineral enriched</li>
-          <li>✓ Digestibility optimized</li>
-          <li>✓ Various protein levels</li>
-         </ul>
+         <button class="mt-4 w-full bg-green-700 text-white font-semibold py-2 px-4 rounded-lg shadow hover:bg-green-800 transition-colors" data-page="poultry-feeds-products">View Poultry Feeds</button>
         </div>
-        <div class="product-card bg-white p-6 rounded-lg shadow-lg border-2 border-gray-200">
-         <div class="text-5xl mb-4 text-center">
-          🐔
+        <div class="product-card bg-white p-6 rounded-lg shadow-lg border-2 border-gray-200 flex flex-col justify-between">
+         <div>
+          <div class="text-5xl mb-4 text-center">🐄</div>
+          <h3 class="text-2xl font-bold text-gray-900 mb-3 text-center">Dairy Feeds</h3>
+          <p class="text-gray-600 mb-4 text-center">Specially formulated to maximize milk production and maintain cow health</p>
+          <ul class="text-sm text-gray-700 space-y-2 mb-4">
+           <li>✓ High energy formulation</li>
+           <li>✓ Calcium &amp; mineral enriched</li>
+           <li>✓ Digestibility optimized</li>
+           <li>✓ Various protein levels</li>
+          </ul>
          </div>
-         <h3 class="text-2xl font-bold text-gray-900 mb-3 text-center">Poultry Feeds</h3>
-         <p class="text-gray-600 mb-4 text-center">Complete nutrition for layers, broilers, and breeding stock</p>
-         <ul class="text-sm text-gray-700 space-y-2">
-          <li>✓ Starter, grower &amp; finisher</li>
-          <li>✓ Layer mash formulations</li>
-          <li>✓ Disease prevention support</li>
-          <li>✓ Consistent egg production</li>
-         </ul>
+         <button class="mt-4 w-full bg-green-700 text-white font-semibold py-2 px-4 rounded-lg shadow hover:bg-green-800 transition-colors" data-page="dairy-feeds-products">View Dairy Feeds</button>
         </div>
-        <div class="product-card bg-white p-6 rounded-lg shadow-lg border-2 border-gray-200">
-         <div class="text-5xl mb-4 text-center">
-          🐷
+        <div class="product-card bg-white p-6 rounded-lg shadow-lg border-2 border-gray-200 flex flex-col justify-between">
+         <div>
+          <div class="text-5xl mb-4 text-center">🌾</div>
+          <h3 class="text-2xl font-bold text-gray-900 mb-3 text-center">Animal Feeds Raw Material</h3>
+          <p class="text-gray-600 mb-4 text-center">Premium quality raw materials for feed production and custom formulations</p>
+          <ul class="text-sm text-gray-700 space-y-2 mb-4">
+           <li>✓ Grains &amp; cereals</li>
+           <li>✓ Protein sources</li>
+           <li>✓ Mineral premixes</li>
+           <li>✓ Bulk availability</li>
+          </ul>
          </div>
-         <h3 class="text-2xl font-bold text-gray-900 mb-3 text-center">Pig &amp; Livestock</h3>
-         <p class="text-gray-600 mb-4 text-center">Balanced nutrition for swine, goats, sheep, and other livestock</p>
-         <ul class="text-sm text-gray-700 space-y-2">
-          <li>✓ Age-appropriate formulas</li>
-          <li>✓ Growth acceleration</li>
-          <li>✓ Feed conversion optimized</li>
-          <li>✓ Immunity boosting</li>
-         </ul>
+         <button class="mt-4 w-full bg-green-700 text-white font-semibold py-2 px-4 rounded-lg shadow hover:bg-green-800 transition-colors" data-page="raw-materials-products">View Raw Materials</button>
+        </div>
+        <div class="product-card bg-white p-6 rounded-lg shadow-lg border-2 border-gray-200 flex flex-col justify-between">
+         <div>
+          <div class="text-5xl mb-4 text-center">🧪</div>
+          <h3 class="text-2xl font-bold text-gray-900 mb-3 text-center">Feeds Additives &amp; Supplements</h3>
+          <p class="text-gray-600 mb-4 text-center">Performance-enhancing additives and nutritional supplements for optimal results</p>
+          <ul class="text-sm text-gray-700 space-y-2 mb-4">
+           <li>✓ Vitamin &amp; mineral premixes</li>
+           <li>✓ Probiotic supplements</li>
+           <li>✓ Amino acid formulations</li>
+           <li>✓ Growth promoters</li>
+          </ul>
+         </div>
+         <button class="mt-4 w-full bg-green-700 text-white font-semibold py-2 px-4 rounded-lg shadow hover:bg-green-800 transition-colors" data-page="additives-products">View Additives &amp; Supplements</button>
         </div>
        </div>
       </div><!-- Visual: Dairy Farm Scene -->
@@ -751,6 +1118,309 @@
      </div>
     </section>
    </div><!-- Contact Page -->
+
+    <!-- POULTRY FEEDS PRODUCTS PAGE -->
+    <div id="poultry-feeds-products-page" class="page">
+     <div class="bg-white border-b sticky top-16 z-40">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center gap-4">
+      <button class="back-to-feeds flex items-center gap-2 text-green-700 hover:text-green-900 font-semibold transition-colors">← Back to Animal Feeds</button>
+      </div>
+     </div>
+     <section class="bg-gradient-to-r from-green-700 to-green-600 text-white py-12 px-4">
+      <div class="max-w-7xl mx-auto text-center">
+      <h1 class="text-5xl font-bold mb-4">Poultry Feeds</h1>
+      <p class="text-xl text-green-100">Explore our range of poultry feeds for every stage</p>
+      </div>
+     </section>
+     <section class="py-16 px-4 bg-gray-50">
+      <div class="max-w-7xl mx-auto space-y-12">
+      <div>
+       <h2 class="text-3xl font-bold text-gray-900 mb-6">Broiler Feeds</h2>
+       <div class="grid md:grid-cols-3 gap-8">
+        <div class="product-variety-card rounded-lg overflow-hidden shadow-lg bg-cover bg-center relative" style="background-image:url('https://placehold.co/400x220?text=Broiler+Starter');min-height:220px;">
+        <div class="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-end p-6">
+         <h3 class="text-2xl font-bold text-white mb-2">Starter Mash</h3>
+         <p class="text-white">Formulated for healthy broiler chick growth and immunity.</p>
+        </div>
+        </div>
+        <div class="product-variety-card rounded-lg overflow-hidden shadow-lg bg-cover bg-center relative" style="background-image:url('https://placehold.co/400x220?text=Broiler+Grower');min-height:220px;">
+        <div class="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-end p-6">
+         <h3 class="text-2xl font-bold text-white mb-2">Grower Mash</h3>
+         <p class="text-white">Supports rapid growth and muscle development in broilers.</p>
+        </div>
+        </div>
+        <div class="product-variety-card rounded-lg overflow-hidden shadow-lg bg-cover bg-center relative" style="background-image:url('https://placehold.co/400x220?text=Broiler+Finisher');min-height:220px;">
+        <div class="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-end p-6">
+         <h3 class="text-2xl font-bold text-white mb-2">Finisher Mash</h3>
+         <p class="text-white">Optimized for weight gain and meat quality before market.</p>
+        </div>
+        </div>
+       </div>
+      </div>
+      <div>
+       <h2 class="text-3xl font-bold text-gray-900 mb-6">Layers Feeds</h2>
+       <div class="grid md:grid-cols-3 gap-8">
+        <div class="product-variety-card rounded-lg overflow-hidden shadow-lg bg-cover bg-center relative" style="background-image:url('https://placehold.co/400x220?text=Chick+Starter');min-height:220px;">
+        <div class="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-end p-6">
+         <h3 class="text-2xl font-bold text-white mb-2">Chick Starter</h3>
+         <p class="text-white">Essential nutrients for healthy layer chicks.</p>
+        </div>
+        </div>
+        <div class="product-variety-card rounded-lg overflow-hidden shadow-lg bg-cover bg-center relative" style="background-image:url('https://placehold.co/400x220?text=Grower+Mash');min-height:220px;">
+        <div class="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-end p-6">
+         <h3 class="text-2xl font-bold text-white mb-2">Grower Mash</h3>
+         <p class="text-white">Supports pullet growth and development.</p>
+        </div>
+        </div>
+        <div class="product-variety-card rounded-lg overflow-hidden shadow-lg bg-cover bg-center relative" style="background-image:url('https://placehold.co/400x220?text=Layers+Mash');min-height:220px;">
+        <div class="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-end p-6">
+         <h3 class="text-2xl font-bold text-white mb-2">Layers Mash</h3>
+         <p class="text-white">Maximizes egg production and shell quality.</p>
+        </div>
+        </div>
+       </div>
+      </div>
+      <div>
+       <h2 class="text-3xl font-bold text-gray-900 mb-6">Layers Concentrate</h2>
+       <div class="grid md:grid-cols-2 gap-8">
+        <div class="product-variety-card rounded-lg overflow-hidden shadow-lg bg-cover bg-center relative" style="background-image:url('https://placehold.co/400x220?text=Layers+Concentrate');min-height:220px;">
+        <div class="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-end p-6">
+         <h3 class="text-2xl font-bold text-white mb-2">Layers Concentrate</h3>
+         <p class="text-white">Concentrated formula for custom feed mixing.</p>
+        </div>
+        </div>
+       </div>
+      </div>
+      </div>
+     </section>
+    </div>
+
+    <!-- DAIRY FEEDS PRODUCTS PAGE -->
+    <div id="dairy-feeds-products-page" class="page">
+     <div class="bg-white border-b sticky top-16 z-40">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center gap-4">
+      <button class="back-to-feeds flex items-center gap-2 text-green-700 hover:text-green-900 font-semibold transition-colors">← Back to Animal Feeds</button>
+      </div>
+     </div>
+     <section class="bg-gradient-to-r from-green-700 to-green-600 text-white py-12 px-4">
+      <div class="max-w-7xl mx-auto text-center">
+      <h1 class="text-5xl font-bold mb-4">Dairy Feeds</h1>
+      <p class="text-xl text-green-100">Feeds for cows, goats, and sheep</p>
+      </div>
+     </section>
+     <section class="py-16 px-4 bg-gray-50">
+      <div class="max-w-7xl mx-auto space-y-12">
+      <div>
+       <h2 class="text-3xl font-bold text-gray-900 mb-6">Cow Feeds</h2>
+       <div class="grid md:grid-cols-2 gap-8">
+        <div class="product-variety-card rounded-lg overflow-hidden shadow-lg bg-cover bg-center relative" style="background-image:url('https://placehold.co/400x220?text=Dairy+Meal+Feeds');min-height:220px;">
+        <div class="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-end p-6">
+         <h3 class="text-2xl font-bold text-white mb-2">Dairy Meal Feeds</h3>
+         <p class="text-white">Balanced meal for high milk yield and cow health.</p>
+        </div>
+        </div>
+        <div class="product-variety-card rounded-lg overflow-hidden shadow-lg bg-cover bg-center relative" style="background-image:url('https://placehold.co/400x220?text=Fattening+Meals');min-height:220px;">
+        <div class="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-end p-6">
+         <h3 class="text-2xl font-bold text-white mb-2">Fattening Meals</h3>
+         <p class="text-white">For rapid weight gain and finishing before sale.</p>
+        </div>
+        </div>
+       </div>
+      </div>
+      <div>
+       <h2 class="text-3xl font-bold text-gray-900 mb-6">Goats and Sheep Feeds</h2>
+       <div class="grid md:grid-cols-2 gap-8">
+        <div class="product-variety-card rounded-lg overflow-hidden shadow-lg bg-cover bg-center relative" style="background-image:url('https://placehold.co/400x220?text=Goat+Dairy+Meals');min-height:220px;">
+        <div class="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-end p-6">
+         <h3 class="text-2xl font-bold text-white mb-2">Dairy Meals</h3>
+         <p class="text-white">Specially formulated for goats and sheep milk production.</p>
+        </div>
+        </div>
+        <div class="product-variety-card rounded-lg overflow-hidden shadow-lg bg-cover bg-center relative" style="background-image:url('https://placehold.co/400x220?text=Goat+Fattening');min-height:220px;">
+        <div class="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-end p-6">
+         <h3 class="text-2xl font-bold text-white mb-2">Fattening</h3>
+         <p class="text-white">For healthy weight gain in goats and sheep.</p>
+        </div>
+        </div>
+       </div>
+      </div>
+      </div>
+     </section>
+    </div>
+
+    <!-- RAW MATERIALS PRODUCTS PAGE -->
+    <div id="raw-materials-products-page" class="page">
+     <div class="bg-white border-b sticky top-16 z-40">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center gap-4">
+      <button class="back-to-feeds flex items-center gap-2 text-green-700 hover:text-green-900 font-semibold transition-colors">← Back to Animal Feeds</button>
+      </div>
+     </div>
+     <section class="bg-gradient-to-r from-green-700 to-green-600 text-white py-12 px-4">
+      <div class="max-w-7xl mx-auto text-center">
+      <h1 class="text-5xl font-bold mb-4">Animal Feeds Raw Materials</h1>
+      <p class="text-xl text-green-100">High quality ingredients for feed production</p>
+      </div>
+     </section>
+     <section class="py-16 px-4 bg-gray-50">
+      <div class="max-w-7xl mx-auto">
+      <div class="grid md:grid-cols-3 gap-8">
+      <div class="product-variety-card rounded-lg overflow-hidden shadow-lg bg-cover bg-center relative" style="background-image:url('https://placehold.co/400x220?text=Soya+Bean+Meal');min-height:220px;">
+        <div class="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-end p-6">
+        <h3 class="text-2xl font-bold text-white mb-2">Soya Bean Meal</h3>
+        <p class="text-white">Rich protein source for all animal feeds.</p>
+        </div>
+       </div>
+      <div class="product-variety-card rounded-lg overflow-hidden shadow-lg bg-cover bg-center relative" style="background-image:url('https://placehold.co/400x220?text=Rice+Bran');min-height:220px;">
+        <div class="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-end p-6">
+        <h3 class="text-2xl font-bold text-white mb-2">Rice Bran</h3>
+        <p class="text-white">Energy and fiber for balanced rations.</p>
+        </div>
+       </div>
+      <div class="product-variety-card rounded-lg overflow-hidden shadow-lg bg-cover bg-center relative" style="background-image:url('https://placehold.co/400x220?text=Cotton+Cake');min-height:220px;">
+        <div class="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-end p-6">
+        <h3 class="text-2xl font-bold text-white mb-2">Cotton Cake</h3>
+        <p class="text-white">Protein and energy for livestock diets.</p>
+        </div>
+       </div>
+      <div class="product-variety-card rounded-lg overflow-hidden shadow-lg bg-cover bg-center relative" style="background-image:url('https://placehold.co/400x220?text=Sunflower+Cake');min-height:220px;">
+        <div class="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-end p-6">
+        <h3 class="text-2xl font-bold text-white mb-2">Sunflower Cake</h3>
+        <p class="text-white">High fiber and protein for ruminants.</p>
+        </div>
+       </div>
+      <div class="product-variety-card rounded-lg overflow-hidden shadow-lg bg-cover bg-center relative" style="background-image:url('https://placehold.co/400x220?text=Sesame+Cake');min-height:220px;">
+        <div class="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-end p-6">
+        <h3 class="text-2xl font-bold text-white mb-2">Sesame Cake</h3>
+        <p class="text-white">Rich in oil and protein for animal feeds.</p>
+        </div>
+       </div>
+      <div class="product-variety-card rounded-lg overflow-hidden shadow-lg bg-cover bg-center relative" style="background-image:url('https://placehold.co/400x220?text=Wheat+Bran');min-height:220px;">
+        <div class="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-end p-6">
+        <h3 class="text-2xl font-bold text-white mb-2">Wheat Bran</h3>
+        <p class="text-white">Fiber and nutrients for digestive health.</p>
+        </div>
+       </div>
+      <div class="product-variety-card rounded-lg overflow-hidden shadow-lg bg-cover bg-center relative" style="background-image:url('https://placehold.co/400x220?text=Maize+Bran');min-height:220px;">
+        <div class="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-end p-6">
+        <h3 class="text-2xl font-bold text-white mb-2">Maize Bran</h3>
+        <p class="text-white">Energy and fiber for all livestock.</p>
+        </div>
+       </div>
+      <div class="product-variety-card rounded-lg overflow-hidden shadow-lg bg-cover bg-center relative" style="background-image:url('https://placehold.co/400x220?text=Broken+Maize');min-height:220px;">
+        <div class="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-end p-6">
+        <h3 class="text-2xl font-bold text-white mb-2">Broken Maize</h3>
+        <p class="text-white">Digestible energy for poultry and livestock.</p>
+        </div>
+       </div>
+      <div class="product-variety-card rounded-lg overflow-hidden shadow-lg bg-cover bg-center relative" style="background-image:url('https://placehold.co/400x220?text=White+Maize');min-height:220px;">
+        <div class="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-end p-6">
+        <h3 class="text-2xl font-bold text-white mb-2">White Maize</h3>
+        <p class="text-white">Staple energy source for all feeds.</p>
+        </div>
+       </div>
+      <div class="product-variety-card rounded-lg overflow-hidden shadow-lg bg-cover bg-center relative" style="background-image:url('https://placehold.co/400x220?text=Lime+Stone');min-height:220px;">
+        <div class="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-end p-6">
+        <h3 class="text-2xl font-bold text-white mb-2">Lime Stone</h3>
+        <p class="text-white">Calcium source for bone strength and eggshells.</p>
+        </div>
+       </div>
+      <div class="product-variety-card rounded-lg overflow-hidden shadow-lg bg-cover bg-center relative" style="background-image:url('https://placehold.co/400x220?text=Bone+Meals');min-height:220px;">
+        <div class="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-end p-6">
+        <h3 class="text-2xl font-bold text-white mb-2">Bone Meals</h3>
+        <p class="text-white">Mineral supplement for livestock and poultry.</p>
+        </div>
+       </div>
+      <div class="product-variety-card rounded-lg overflow-hidden shadow-lg bg-cover bg-center relative" style="background-image:url('https://placehold.co/400x220?text=DCP');min-height:220px;">
+        <div class="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-end p-6">
+        <h3 class="text-2xl font-bold text-white mb-2">DCP</h3>
+        <p class="text-white">Dicalcium phosphate for bone and eggshell health.</p>
+        </div>
+       </div>
+      <div class="product-variety-card rounded-lg overflow-hidden shadow-lg bg-cover bg-center relative" style="background-image:url('https://placehold.co/400x220?text=Lucina');min-height:220px;">
+        <div class="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-end p-6">
+        <h3 class="text-2xl font-bold text-white mb-2">Lucina</h3>
+        <p class="text-white">Protein-rich forage for ruminants.</p>
+        </div>
+       </div>
+      </div>
+      </div>
+     </section>
+    </div>
+
+    <!-- FEEDS ADDITIVES & SUPPLEMENTS PRODUCTS PAGE -->
+    <div id="additives-products-page" class="page">
+     <div class="bg-white border-b sticky top-16 z-40">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center gap-4">
+      <button class="back-to-feeds flex items-center gap-2 text-green-700 hover:text-green-900 font-semibold transition-colors">← Back to Animal Feeds</button>
+      </div>
+     </div>
+     <section class="bg-gradient-to-r from-green-700 to-green-600 text-white py-12 px-4">
+      <div class="max-w-7xl mx-auto text-center">
+      <h1 class="text-5xl font-bold mb-4">Feeds Additives &amp; Supplements</h1>
+      <p class="text-xl text-green-100">Enhance animal health and productivity</p>
+      </div>
+     </section>
+     <section class="py-16 px-4 bg-gray-50">
+      <div class="max-w-7xl mx-auto">
+      <div class="grid md:grid-cols-3 gap-8">
+      <div class="product-variety-card rounded-lg overflow-hidden shadow-lg bg-cover bg-center relative" style="background-image:url('https://placehold.co/400x220?text=Broiler+Premix');min-height:220px;">
+        <div class="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-end p-6">
+        <h3 class="text-2xl font-bold text-white mb-2">Broiler Premix</h3>
+        <p class="text-white">Balanced vitamins and minerals for broilers.</p>
+        </div>
+       </div>
+      <div class="product-variety-card rounded-lg overflow-hidden shadow-lg bg-cover bg-center relative" style="background-image:url('https://placehold.co/400x220?text=Layers+Premix');min-height:220px;">
+        <div class="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-end p-6">
+        <h3 class="text-2xl font-bold text-white mb-2">Layers Premix</h3>
+        <p class="text-white">Essential nutrients for high egg yield.</p>
+        </div>
+       </div>
+      <div class="product-variety-card rounded-lg overflow-hidden shadow-lg bg-cover bg-center relative" style="background-image:url('https://placehold.co/400x220?text=Enzymes');min-height:220px;">
+        <div class="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-end p-6">
+        <h3 class="text-2xl font-bold text-white mb-2">Enzymes</h3>
+        <p class="text-white">Improves feed digestibility and absorption.</p>
+        </div>
+       </div>
+      <div class="product-variety-card rounded-lg overflow-hidden shadow-lg bg-cover bg-center relative" style="background-image:url('https://placehold.co/400x220?text=Lysine');min-height:220px;">
+        <div class="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-end p-6">
+        <h3 class="text-2xl font-bold text-white mb-2">Lysine</h3>
+        <p class="text-white">Essential amino acid for growth and health.</p>
+        </div>
+       </div>
+      <div class="product-variety-card rounded-lg overflow-hidden shadow-lg bg-cover bg-center relative" style="background-image:url('https://placehold.co/400x220?text=Methionine');min-height:220px;">
+        <div class="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-end p-6">
+        <h3 class="text-2xl font-bold text-white mb-2">Methionine</h3>
+        <p class="text-white">Supports protein synthesis and metabolism.</p>
+        </div>
+       </div>
+      <div class="product-variety-card rounded-lg overflow-hidden shadow-lg bg-cover bg-center relative" style="background-image:url('https://placehold.co/400x220?text=Egg+Boosters');min-height:220px;">
+        <div class="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-end p-6">
+        <h3 class="text-2xl font-bold text-white mb-2">Egg Boosters</h3>
+        <p class="text-white">Enhances egg production and quality.</p>
+        </div>
+       </div>
+      <div class="product-variety-card rounded-lg overflow-hidden shadow-lg bg-cover bg-center relative" style="background-image:url('https://placehold.co/400x220?text=DCP');min-height:220px;">
+        <div class="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-end p-6">
+        <h3 class="text-2xl font-bold text-white mb-2">DCP</h3>
+        <p class="text-white">Dicalcium phosphate for bone and eggshell health.</p>
+        </div>
+       </div>
+      <div class="product-variety-card rounded-lg overflow-hidden shadow-lg bg-cover bg-center relative" style="background-image:url('https://placehold.co/400x220?text=Salt');min-height:220px;">
+        <div class="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-end p-6">
+        <h3 class="text-2xl font-bold text-white mb-2">Salt</h3>
+        <p class="text-white">Essential mineral for animal health.</p>
+        </div>
+       </div>
+      <div class="product-variety-card rounded-lg overflow-hidden shadow-lg bg-cover bg-center relative" style="background-image:url('https://placehold.co/400x220?text=Macro+Packs');min-height:220px;">
+        <div class="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-end p-6">
+        <h3 class="text-2xl font-bold text-white mb-2">Macro Packs</h3>
+        <p class="text-white">Comprehensive supplement packs for all livestock.</p>
+        </div>
+       </div>
+      </div>
+      </div>
+     </section>
+    </div>
    <div id="contact-page" class="page"><!-- Contact Hero Visual -->
     <section class="py-16 px-4 bg-gradient-to-br from-green-600 to-blue-600 relative overflow-hidden">
      <svg class="absolute inset-0 w-full h-full opacity-20" viewbox="0 0 1200 300" fill="none"><!-- Connection lines representing communication --> <circle cx="200" cy="150" r="40" fill="#FFFFFF" opacity="0.3" /> <circle cx="600" cy="100" r="50" fill="#FFFFFF" opacity="0.3" /> <circle cx="1000" cy="150" r="45" fill="#FFFFFF" opacity="0.3" /> <line x1="240" y1="150" x2="550" y2="100" stroke="#FFFFFF" stroke-width="3" opacity="0.3" /> <line x1="650" y1="100" x2="955" y2="150" stroke="#FFFFFF" stroke-width="3" opacity="0.3" /> <!-- Phone icon --> <path d="M180 130 L185 135 L190 130 Q195 125 200 130 L205 135 L210 130" stroke="#FFFFFF" stroke-width="3" fill="none" opacity="0.4" /> <!-- Envelope icon --> <rect x="575" y="85" width="50" height="30" stroke="#FFFFFF" stroke-width="3" fill="none" opacity="0.4" /> <path d="M575 85 L600 105 L625 85" stroke="#FFFFFF" stroke-width="3" fill="none" opacity="0.4" />

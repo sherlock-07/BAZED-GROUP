@@ -1,4 +1,4 @@
-    body {
+body {
       box-sizing: border-box;
     }
     
@@ -152,4 +152,86 @@
     html {
       scroll-behavior: smooth;
     }
-  
+    
+    .product-variety-card {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: stretch;
+      min-height: 220px;
+      background-size: cover;
+      background-position: center;
+      border-radius: 1rem;
+      overflow: hidden;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+      position: relative;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .product-variety-card .h-48 {
+      display: flex;
+      align-items: stretch;
+      justify-content: center;
+      min-height: 6rem;
+      height: 12rem;
+      width: 100%;
+      padding: 0;
+      background: none;
+      overflow: hidden;
+    }
+    .product-variety-card .h-48 img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      border-radius: 0;
+      display: block;
+    }
+    .product-variety-card .p-6 {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 1.5rem;
+    }
+    .product-variety-card h3 {
+      margin: 0 0 0.5rem 0;
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: #22292f;
+      text-align: left;
+    }
+    .product-variety-card p {
+      margin: 0 0 1rem 0;
+      color: #374151;
+      font-size: 1rem;
+      text-align: left;
+    }
+    .product-variety-card .flex.gap-2.pt-4.border-t {
+      width: 100%;
+      margin-top: 1rem;
+      padding-top: 0.75rem;
+      border-top: 1px solid #e5e7eb;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+    .product-variety-card span {
+      color: #22292f;
+      font-weight: 500;
+    }
+    @media (max-width: 900px) {
+      .product-variety-card {
+        min-height: 160px;
+      }
+      .product-variety-card .h-48 {
+        min-height: 4rem;
+        height: 7rem;
+      }
+      .product-variety-card .p-6 {
+        padding: 1rem;
+      }
+    }
+    .product-variety-card:hover {
+      transform: translateY(-6px) scale(1.03);
+      box-shadow: 0 16px 32px rgba(5,104,56,0.18);
+      z-index: 2;
+    }

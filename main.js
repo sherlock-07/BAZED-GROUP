@@ -1,5 +1,4 @@
-
-    // ====================
+// ====================
     // CONFIGURATION
     // ====================
     const defaultConfig = {
@@ -214,6 +213,55 @@
         formMessage.classList.add('hidden');
       }, 5000);
     });
+
+    // ====================
+    // PRODUCT PAGE NAVIGATION
+    // ====================
+    document.addEventListener('click', (e) => {
+      if (e.target.classList.contains('back-to-nafaka')) {
+        e.preventDefault();
+        showPage('nafaka');
+      }
+      // Back to Animal Feeds from feed solution product pages
+      if (e.target.classList.contains('back-to-feeds')) {
+        e.preventDefault();
+        showPage('feeds');
+      }
+    });
+
+    // Feed Solution Cards Navigation
+    // Poultry Feeds
+    const poultryFeedsCard = document.querySelector('[data-page="poultry-feeds-products"]');
+    if (poultryFeedsCard) {
+      poultryFeedsCard.addEventListener('click', (e) => {
+        e.preventDefault();
+        showPage('poultry-feeds-products');
+      });
+    }
+    // Dairy Feeds
+    const dairyFeedsCard = document.querySelector('[data-page="dairy-feeds-products"]');
+    if (dairyFeedsCard) {
+      dairyFeedsCard.addEventListener('click', (e) => {
+        e.preventDefault();
+        showPage('dairy-feeds-products');
+      });
+    }
+    // Raw Materials
+    const rawMaterialsCard = document.querySelector('[data-page="raw-materials-products"]');
+    if (rawMaterialsCard) {
+      rawMaterialsCard.addEventListener('click', (e) => {
+        e.preventDefault();
+        showPage('raw-materials-products');
+      });
+    }
+    // Additives & Supplements
+    const additivesCard = document.querySelector('[data-page="additives-products"]');
+    if (additivesCard) {
+      additivesCard.addEventListener('click', (e) => {
+        e.preventDefault();
+        showPage('additives-products');
+      });
+    }
 
     // ====================
     // TRANSLATION SYSTEM
