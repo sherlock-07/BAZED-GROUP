@@ -199,11 +199,17 @@ body {
       color: #22292f;
       text-align: left;
     }
+    .product-variety-card .absolute.inset-0 h3 {
+      color: #ffffff !important;
+    }
     .product-variety-card p {
       margin: 0 0 1rem 0;
       color: #374151;
       font-size: 1rem;
       text-align: left;
+    }
+    .product-variety-card .absolute.inset-0 p {
+      color: #ffffff !important;
     }
     .product-variety-card .flex.gap-2.pt-4.border-t {
       width: 100%;
