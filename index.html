@@ -22,7 +22,7 @@
     <span id="nav-company-name" class="text-xl font-bold text-gray-900">Bazed Group</span>
 </div>
       </div>
-      <div class="hidden md:flex space-x-8 items-center"><a href="#home" class="nav-link text-gray-700 hover:text-green-700 font-medium active" data-page="home" data-translate="nav_home">Home</a> <a href="#about" class="nav-link text-gray-700 hover:text-green-700 font-medium" data-page="about" data-translate="nav_about">About Us</a> <a href="#nafaka" class="nav-link text-gray-700 hover:text-green-700 font-medium" data-page="nafaka" data-translate="nav_nafaka">Bazed Nafaka</a> <a href="#feeds" class="nav-link text-gray-700 hover:text-green-700 font-medium" data-page="feeds" data-translate="nav_feeds">Animal Feeds</a> <a href="#contact" class="nav-link text-gray-700 hover:text-green-700 font-medium" data-page="contact" data-translate="nav_contact">Contact</a>
+      <div class="hidden md:flex space-x-8 items-center"><a href="#home" class="nav-link text-gray-700 hover:text-green-700 font-medium active" data-page="home" data-translate="nav_home">Home</a> <a href="#about" class="nav-link text-gray-700 hover:text-green-700 font-medium" data-page="about" data-translate="nav_about">About Us</a> <a href="#nafaka" class="nav-link text-gray-700 hover:text-green-700 font-medium" data-page="nafaka" data-translate="nav_nafaka">Bazed Nafaka</a> <a href="#feeds" class="nav-link text-gray-700 hover:text-green-700 font-medium" data-page="feeds" data-translate="nav_feeds">Bazed Feeds</a> <a href="#contact" class="nav-link text-gray-700 hover:text-green-700 font-medium" data-page="contact" data-translate="nav_contact">Contact</a>
       </div><button id="mobile-menu-btn" class="md:hidden text-gray-700 p-2 rounded hover:bg-gray-100 transition-colors" aria-label="Toggle menu">
        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
        </svg></button>
@@ -32,16 +32,18 @@
      <div class="px-4 pt-2 pb-4 space-y-2"><a href="#home" class="block px-3 py-2 text-gray-700 hover:bg-green-50 rounded active" data-page="home" data-translate="nav_home">Home</a> 
                                            <a href="#about" class="block px-3 py-2 text-gray-700 hover:bg-green-50 rounded" data-page="about" data-translate="nav_about">About Us</a> 
                                            <a href="#nafaka" class="block px-3 py-2 text-gray-700 hover:bg-green-50 rounded" data-page="nafaka" data-translate="nav_nafaka">Bazed Nafaka</a> 
-                                           <a href="#feeds" class="block px-3 py-2 text-gray-700 hover:bg-green-50 rounded" data-page="feeds" data-translate="nav_feeds">Animal Feeds</a>
+                                           <a href="#feeds" class="block px-3 py-2 text-gray-700 hover:bg-green-50 rounded" data-page="feeds" data-translate="nav_feeds">Bazed Feeds</a>
                                             <a href="#contact" class="block px-3 py-2 text-gray-700 hover:bg-green-50 rounded" data-page="contact" data-translate="nav_contact">Contact</a>
      </div>
     </div>
    </nav>
    
    <!-- Home Page -->
-   <div id="home-page" class="page active"><!-- Hero Section -->
-    <section class="hero-section text-white py-20 px-4">
-     <div class="max-w-7xl mx-auto text-center">
+   <div id="home-page" class="page active">
+    <!-- Hero Section -->
+    <section class="hero-section text-white py-20 px-4 relative" style="background-image: url('img/HOME HERO SECTION.jpeg'); background-size: cover; background-position: center; background-attachment: fixed;">
+     <div class="absolute inset-0 bg-black opacity-50"></div>
+     <div class="max-w-7xl mx-auto text-center relative z-10">
       <h1 id="hero-company-name" class="text-5xl md:text-6xl font-bold mb-4">Bazed Group</h1>
       <p id="hero-tagline" class="text-2xl md:text-3xl mb-12 text-green-100" data-translate="hero_tagline">Nourishing Communities, Feeding Growth</p>
       <div class="grid md:grid-cols-2 gap-8 mt-16 max-w-5xl mx-auto">
@@ -111,10 +113,10 @@
      <div class="max-w-7xl mx-auto">
       <h2 class="text-4xl font-bold text-center text-gray-900 mb-4" data-translate="featured_products_title">Featured Products</h2>
       <p class="text-center text-gray-600 text-lg mb-12 max-w-3xl mx-auto" data-translate="featured_products_subtitle">Discover our most popular agricultural solutions trusted by farmers and businesses across the region</p>
-      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6"><!-- Maize -->
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Maize -->
        <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
-        <div class="h-48 bg-gradient-to-br from-yellow-100 to-amber-100 flex items-center justify-center"><span class="text-7xl">🌽</span>
-        </div>
+        <div class="h-48 bg-cover bg-center" style="background-image: url('img/PREMIUM MAIZE.jpeg');"></div>
         <div class="p-6">
          <h3 class="text-xl font-bold text-gray-900 mb-2" data-translate="product_maize_title">Premium Maize</h3>
          <p class="text-gray-600 text-sm mb-3" data-translate="product_maize_desc">High-quality yellow and white maize varieties, carefully sorted and tested</p>
@@ -123,18 +125,16 @@
        </div>
        <!-- Rice -->
        <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
-        <div class="h-48 bg-gradient-to-br from-slate-50 to-gray-100 flex items-center justify-center"><span class="text-7xl">🍚</span>
-        </div>
+        <div class="h-48 bg-cover bg-center" style="background-image: url('img/SUPER RICE.jpeg');"></div>
         <div class="p-6">
-         <h3 class="text-xl font-bold text-gray-900 mb-2" data-translate="product_rice_title">Basmati Rice</h3>
+         <h3 class="text-xl font-bold text-gray-900 mb-2" data-translate="product_rice_title">Super Rice</h3>
          <p class="text-gray-600 text-sm mb-3" data-translate="product_rice_desc">Aromatic long-grain rice from premium growing regions</p>
        
         </div>
        </div>
        <!-- Dairy Feed -->
        <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
-        <div class="h-48 bg-gradient-to-br from-blue-50 to-cyan-50 flex items-center justify-center"><span class="text-7xl">🥛</span>
-        </div>
+        <div class="h-48 bg-cover bg-center" style="background-image: url('img/DAIRY FEEDS.jpeg');"></div>
         <div class="p-6">
          <h3 class="text-xl font-bold text-gray-900 mb-2" data-translate="product_dairy_title">Dairy Feeds</h3>
          <p class="text-gray-600 text-sm mb-3" data-translate="product_dairy_desc">Scientifically formulated for maximum milk production</p>
@@ -142,8 +142,7 @@
         </div>
        </div><!-- Poultry Feed -->
        <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
-        <div class="h-48 bg-gradient-to-br from-orange-50 to-amber-50 flex items-center justify-center"><span class="text-7xl">🐔</span>
-        </div>
+        <div class="h-48 bg-cover bg-center" style="background-image: url('img/POULTRY FEEDS.jpeg');"></div>
         <div class="p-6">
          <h3 class="text-xl font-bold text-gray-900 mb-2" data-translate="product_poultry_title">Poultry Feeds</h3>
          <p class="text-gray-600 text-sm mb-3" data-translate="product_poultry_desc">Complete nutrition for layers and broilers at every stage</p>
@@ -200,12 +199,12 @@
       <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
        <div class="text-center">
         <div class="text-5xl font-bold mb-2">
-         15+
+         6
         </div>
         <div class="text-xl text-green-100">
          Years of Excellence
         </div>
-        <p class="text-green-200 text-sm mt-2">Serving communities since 2009</p>
+        <p class="text-green-200 text-sm mt-2">Serving communities since 2019</p>
        </div>
        <div class="text-center">
         <div class="text-5xl font-bold mb-2">
@@ -218,7 +217,7 @@
        </div>
        <div class="text-center">
         <div class="text-5xl font-bold mb-2">
-         50,000+
+         6,000+
         </div>
         <div class="text-xl text-green-100">
          Tons Distributed
@@ -227,7 +226,7 @@
        </div>
        <div class="text-center">
         <div class="text-5xl font-bold mb-2">
-         5
+         6
         </div>
         <div class="text-xl text-green-100">
          Countries Served
@@ -336,77 +335,126 @@
    </div>
    
    <!-- About Page -->
-   <div id="about-page" class="page"><!-- Hero Visual for About -->
-    <section class="py-16 px-4 bg-gradient-to-br from-green-600 to-emerald-700 relative overflow-hidden">
-     <svg class="absolute inset-0 w-full h-full opacity-20" viewbox="0 0 1200 400" fill="none"><!-- Farm field pattern --> <path d="M0 300 Q200 280 400 300 T800 300 T1200 300" stroke="#FFFFFF" stroke-width="3" /> <path d="M0 320 Q200 300 400 320 T800 320 T1200 320" stroke="#FFFFFF" stroke-width="2" /> <!-- Silos --> <rect x="100" y="180" width="60" height="120" rx="30" fill="#FFFFFF" opacity="0.3" /> <rect x="180" y="180" width="60" height="120" rx="30" fill="#FFFFFF" opacity="0.3" /> <polygon points="130,180 100,160 160,160" fill="#FFFFFF" opacity="0.3" /> <polygon points="210,180 180,160 240,160" fill="#FFFFFF" opacity="0.3" /> <!-- Tractor silhouette --> <circle cx="950" cy="280" r="25" fill="#FFFFFF" opacity="0.2" /> <circle cx="1050" cy="280" r="35" fill="#FFFFFF" opacity="0.2" /> <rect x="970" y="240" width="60" height="40" fill="#FFFFFF" opacity="0.2" />
-     </svg>
+   <div id="about-page" class="page">
+    <!-- Hero Section -->
+    <section class="py-16 px-4 relative overflow-hidden" style="background-image: url('img/ABOUT.jpg'); background-size: cover; background-position: center;">
+     <div class="absolute inset-0 bg-black opacity-70"></div>
      <div class="max-w-4xl mx-auto text-center relative z-10">
       <h1 class="text-5xl md:text-6xl font-bold text-white mb-6">About Bazed Group</h1>
-      <p class="text-xl md:text-2xl text-green-50">A leading agricultural holding company committed to nourishing communities and supporting sustainable growth across East Africa</p>
+      <p class="text-xl md:text-2xl text-white">A registered agribusiness company committed to enhancing agricultural productivity and animal health across the region</p>
      </div>
     </section>
-    <section class="py-20 px-4 bg-gradient-to-br from-green-50 to-white">
-     <div class="max-w-7xl mx-auto">
+
+    <!-- Welcome Section -->
+    <section class="py-16 px-4 bg-white">
+     <div class="max-w-4xl mx-auto">
+      <div class="text-center mb-12">
+       <h2 class="text-4xl font-bold text-green-700 mb-6">Welcome to BAZED GROUP</h2>
+       <p class="text-lg text-gray-700 leading-relaxed mb-6">BAZED GROUP is a registered agribusiness company committed to enhancing agricultural productivity and animal health across the region. We empower farmers and agribusinesses by supplying high-quality animal feeds and premium agricultural commodities tailored for poultry, goats, cattle, and crop producers.</p>
+      </div>
+     </div>
+    </section>
+
+    <!-- Who We Are Section -->
+    <section class="py-16 px-4 bg-gradient-to-br from-green-50 to-white">
+     <div class="max-w-6xl mx-auto">
+      <h2 class="text-4xl font-bold text-gray-900 mb-12 text-center">Who We Are</h2>
+      <div class="grid md:grid-cols-2 gap-12 items-center mb-12">
+       <div>
+        <img src="img/ABOUT.jpg" alt="Bazed Group Team" class="w-full h-80 object-cover rounded-lg shadow-lg" />
+       </div>
+       <div>
+        <h3 class="text-2xl font-bold text-green-700 mb-6">Our Commitment</h3>
+        <p class="text-gray-700 leading-relaxed mb-4">Driven by innovation, sustainability, and customer satisfaction, our animal feeds are formulated using carefully selected raw materials and scientifically proven methods to ensure quality, safety, and consistent performance.</p>
+        <p class="text-gray-700 leading-relaxed mb-4">We specialize in sourcing, supplying, and exporting high-quality, Non-GMO agricultural and animal feed products to local and international markets.</p>
+        <p class="text-gray-700 leading-relaxed">At BAZED GROUP, we focus on building reliable supply chains, supporting sustainable agriculture, and creating long-term value for our partners, farmers, and customers worldwide.</p>
+       </div>
+      </div>
+     </div>
+    </section>
+
+    <!-- Mission & Vision Section -->
+    <section class="py-16 px-4 bg-white">
+     <div class="max-w-6xl mx-auto">
       <div class="grid md:grid-cols-2 gap-12 mb-16">
-       <div class="bg-white p-8 rounded-lg shadow-lg">
-        <h2 class="text-3xl font-bold text-green-700 mb-4">Our Mission</h2>
-        <p class="text-gray-700 text-lg leading-relaxed">To provide high-quality agricultural products that nourish communities and support the growth of sustainable farming practices. We bridge the gap between farmers and consumers, ensuring quality, affordability, and reliability at every step.</p>
+       <div class="bg-gradient-to-br from-green-600 to-green-700 p-10 rounded-lg shadow-lg text-white">
+        <h2 class="text-3xl font-bold mb-6 flex items-center gap-3">
+         <span class="text-4xl">🎯</span> Our Mission
+        </h2>
+        <p class="text-lg leading-relaxed">To provide high-quality agricultural products and animal feeds that nourish communities, support sustainable farming practices, and create lasting value for farmers and businesses across the region.</p>
        </div>
-       <div class="bg-white p-8 rounded-lg shadow-lg">
-        <h2 class="text-3xl font-bold text-green-700 mb-4">Our Vision</h2>
-        <p class="text-gray-700 text-lg leading-relaxed">To be East Africa's most trusted agricultural solutions provider, known for innovation, quality, and our unwavering commitment to community development and food security for all.</p>
-       </div>
-      </div>
-      <div class="bg-white p-10 rounded-lg shadow-lg mb-16">
-       <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">Our Core Values</h2>
-       <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-        <div class="text-center">
-         <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4"><span class="text-3xl">🌾</span>
-         </div>
-         <h3 class="font-bold text-gray-900 mb-2">Quality First</h3>
-         <p class="text-gray-600 text-sm">Uncompromising standards in every product</p>
-        </div>
-        <div class="text-center">
-         <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4"><span class="text-3xl">🤝</span>
-         </div>
-         <h3 class="font-bold text-gray-900 mb-2">Integrity</h3>
-         <p class="text-gray-600 text-sm">Honest and transparent in all dealings</p>
-        </div>
-        <div class="text-center">
-         <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4"><span class="text-3xl">🌍</span>
-         </div>
-         <h3 class="font-bold text-gray-900 mb-2">Sustainability</h3>
-         <p class="text-gray-600 text-sm">Protecting our environment for future generations</p>
-        </div>
-        <div class="text-center">
-         <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4"><span class="text-3xl">💡</span>
-         </div>
-         <h3 class="font-bold text-gray-900 mb-2">Innovation</h3>
-         <p class="text-gray-600 text-sm">Continuously improving our products and services</p>
-        </div>
+       <div class="bg-gradient-to-br from-green-500 to-green-600 p-10 rounded-lg shadow-lg text-white">
+        <h2 class="text-3xl font-bold mb-6 flex items-center gap-3">
+         <span class="text-4xl">👁️</span> Our Vision
+        </h2>
+        <p class="text-lg leading-relaxed">To be East Africa's most trusted agricultural solutions provider, known for innovation, quality, and our unwavering commitment to community development, food security, and sustainable growth for all.</p>
        </div>
       </div>
-      <div class="bg-green-700 text-white p-10 rounded-lg shadow-lg">
-       <h2 class="text-3xl font-bold mb-6 text-center">Our Impact</h2>
-       <div class="grid md:grid-cols-3 gap-8 text-center">
-        <div>
-         <div class="text-5xl font-bold mb-2">
-          15+
-         </div>
-         <p class="text-green-100">Years of Excellence</p>
+     </div>
+    </section>
+
+    <!-- Core Values Section -->
+    <section class="py-16 px-4 bg-gradient-to-br from-green-50 to-white">
+     <div class="max-w-6xl mx-auto">
+      <h2 class="text-4xl font-bold text-gray-900 mb-12 text-center">Our Core Values</h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+       <div class="bg-white p-8 rounded-lg shadow-lg text-center hover:shadow-xl transition-shadow">
+        <div class="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+         <svg class="w-12 h-12 text-green-700" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm3.5-9c.83 0 1.5-.67 1.5-1.5S16.33 8 15.5 8 14 8.67 14 9.5s.67 1.5 1.5 1.5zm-7 0c.83 0 1.5-.67 1.5-1.5S9.33 8 8.5 8 7 8.67 7 9.5 7.67 11 8.5 11zm3.5 6.5c2.33 0 4.31-1.46 5.11-3.5H6.89c.8 2.04 2.78 3.5 5.11 3.5z"/></svg>
         </div>
-        <div>
-         <div class="text-5xl font-bold mb-2">
-          10,000+
-         </div>
-         <p class="text-green-100">Farmers Supported</p>
+        <h3 class="text-xl font-bold text-gray-900 mb-3">Quality First</h3>
+        <p class="text-gray-600">Uncompromising standards in every product we deliver</p>
+       </div>
+       <div class="bg-white p-8 rounded-lg shadow-lg text-center hover:shadow-xl transition-shadow">
+        <div class="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+         <svg class="w-12 h-12 text-green-700" fill="currentColor" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
         </div>
-        <div>
-         <div class="text-5xl font-bold mb-2">
-          5
-         </div>
-         <p class="text-green-100">Countries Served</p>
+        <h3 class="text-xl font-bold text-gray-900 mb-3">Integrity</h3>
+        <p class="text-gray-600">Honest and transparent in all our dealings</p>
+       </div>
+       <div class="bg-white p-8 rounded-lg shadow-lg text-center hover:shadow-xl transition-shadow">
+        <div class="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+         <svg class="w-12 h-12 text-green-700" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
         </div>
+        <h3 class="text-xl font-bold text-gray-900 mb-3">Sustainability</h3>
+        <p class="text-gray-600">Protecting our environment for future generations</p>
+       </div>
+       <div class="bg-white p-8 rounded-lg shadow-lg text-center hover:shadow-xl transition-shadow">
+        <div class="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+         <svg class="w-12 h-12 text-green-700" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+        </div>
+        <h3 class="text-xl font-bold text-gray-900 mb-3">Innovation</h3>
+        <p class="text-gray-600">Continuously improving our products and services</p>
+       </div>
+      </div>
+     </div>
+    </section>
+
+    <!-- Our Impact Section -->
+    <section class="py-16 px-4 pb-32 bg-gradient-to-br from-green-700 to-green-800 text-white rounded-lg mx-4 mb-16">
+     <div class="max-w-6xl mx-auto">
+      <h2 class="text-4xl font-bold text-center mb-4">Our Impact in Numbers</h2>
+      <p class="text-center text-green-100 text-lg mb-12 max-w-3xl mx-auto">Building trust through consistent excellence and community partnership</p>
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+       <div class="text-center">
+        <div class="text-5xl font-bold mb-2">6</div>
+        <div class="text-xl text-green-100 font-semibold">Years of Excellence</div>
+        <p class="text-green-200 text-sm mt-2">Serving communities since 2019</p>
+       </div>
+       <div class="text-center">
+        <div class="text-5xl font-bold mb-2">10,000+</div>
+        <div class="text-xl text-green-100 font-semibold">Farmers Supported</div>
+        <p class="text-green-200 text-sm mt-2">Direct partnerships across the region</p>
+       </div>
+       <div class="text-center">
+        <div class="text-5xl font-bold mb-2">6,000+</div>
+        <div class="text-xl text-green-100 font-semibold">Tons Distributed</div>
+        <p class="text-green-200 text-sm mt-2">Premium products annually</p>
+       </div>
+       <div class="text-center">
+        <div class="text-5xl font-bold mb-2">6</div>
+        <div class="text-xl text-green-100 font-semibold">Countries Served</div>
+        <p class="text-green-200 text-sm mt-2">Growing regional presence</p>
        </div>
       </div>
      </div>
@@ -415,8 +463,8 @@
    
    <!-- Bazed Nafaka Page -->
    <div id="nafaka-page" class="page"><!-- Nafaka Hero with Visual -->
-    <section class="py-16 px-4 relative overflow-hidden" style="background-image: url('img/WHEAT.jpg'); background-size: cover; background-position: center; background-attachment: fixed;">
-     <div class="absolute inset-0 bg-black opacity-70"></div>
+    <section class="py-16 px-4 relative overflow-hidden" style="background-image: url('img/BAZED NAFAKA.jpeg'); background-size: cover; background-position: center; background-attachment: fixed;">
+     <div class="absolute inset-0 bg-black opacity-60"></div>
      <div class="max-w-7xl mx-auto text-center relative z-10">
       <div class="inline-flex items-center gap-3 mb-4">
       <img src="img/NAFAKA_LOGO.png" alt="Bazed Nafaka Logo" class="w-23 h-23 object-contain" />
@@ -633,10 +681,10 @@
         </div>
        </div>
 
-       <!-- Coffee Beans -->
+       <!-- Rose Coco Beans -->
       <div class="product-variety-card rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-all bg-white">
        <div class="h-48 flex items-center justify-center bg-rose-100">
-        <img src="img/COFFE BEANS.jpg" alt="Rose Coco Beans" class="object-contain h-24 w-24" />
+        <img src="img/ROSE COCO BEANS.jpg" alt="Rose Coco Beans" class="object-contain h-24 w-24" />
        </div>
        <div class="p-6">
         <h3 class="text-2xl font-bold text-gray-900 mb-2">Rose Coco Beans</h3>
@@ -648,10 +696,10 @@
        </div>
       </div>
 
-         <!-- Rose Coco Beans -->
+         <!-- Coffee Beans -->
       <div class="product-variety-card rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-all bg-white">
        <div class="h-48 flex items-center justify-center bg-amber-100">
-        <img src="img/ROSE COCO BEANS.jpg" alt="Coffee Beans" class="object-contain h-24 w-24" />
+        <img src="img/COFFE BEANS.jpg" alt="Coffee Beans" class="object-contain h-24 w-24" />
        </div>
         <div class="p-6">
          <h3 class="text-2xl font-bold text-gray-900 mb-2">Coffee Beans</h3>
@@ -1388,6 +1436,16 @@
           </div>
          </div>
          <div class="flex items-start gap-3">
+          <svg class="w-6 h-6 text-green-700 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+          </svg>
+          <div>
+           <p class="font-semibold text-gray-900">Location</p>
+           <p class="text-gray-700">Tegeta kwa Ndevu</p>
+           <p class="text-gray-700">Bagamoyo Road</p>
+           <p class="text-gray-700">Dar es Salaam, Tanzania</p>
+          </div>
+         </div>
+         <div class="flex items-start gap-3">
           <svg class="w-6 h-6 text-green-700 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
           </svg>
           <div>
@@ -1426,6 +1484,16 @@
           </div>
          </div>
          <div class="flex items-start gap-3">
+          <svg class="w-6 h-6 text-gray-900 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+          </svg>
+          <div>
+           <p class="font-semibold text-gray-900">Location</p>
+           <p class="text-gray-700">Tegeta kwa Ndevu</p>
+           <p class="text-gray-700">Bagamoyo Road</p>
+           <p class="text-gray-700">Dar es Salaam, Tanzania</p>
+          </div>
+         </div>
+         <div class="flex items-start gap-3">
           <svg class="w-6 h-6 text-gray-900 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
           </svg>
           <div>
@@ -1449,6 +1517,14 @@
          </div>
          <div><label for="email" class="block text-sm font-semibold text-gray-700 mb-2" data-translate="email_address">Email Address</label> <input type="email" id="email" name="email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg transition-all" placeholder="john@example.com">
          </div>
+        </div>
+        <div class="grid md:grid-cols-2 gap-6">
+         <div><label for="phone" class="block text-sm font-semibold text-gray-700 mb-2">Phone Number</label> <input type="tel" id="phone" name="phone" required pattern="[0-9+\-\s\(\)]+" class="w-full px-4 py-3 border border-gray-300 rounded-lg transition-all" placeholder="+255 768 081 698">
+         </div>
+         <div><label for="location" class="block text-sm font-semibold text-gray-700 mb-2">Country or City</label> <input type="text" id="location" name="location" required class="w-full px-4 py-3 border border-gray-300 rounded-lg transition-all" placeholder="Dar es Salaam, Tanzania">
+         </div>
+        </div>
+        <div><label for="user-type" class="block text-sm font-semibold text-gray-700 mb-2">Are you a Seller or Buyer?</label> <select id="user-type" name="user-type" required class="w-full px-4 py-3 border border-gray-300 rounded-lg transition-all"> <option value="">Select an option</option> <option value="seller">Seller</option> <option value="buyer">Buyer</option> </select>
         </div>
         <div><label for="division" class="block text-sm font-semibold text-gray-700 mb-2" data-translate="which_division">Which Division?</label> <select id="division" name="division" required class="w-full px-4 py-3 border border-gray-300 rounded-lg transition-all"> <option value="" data-translate="select_division">Select a division</option> <option value="nafaka" data-translate="nafaka_foods">Bazed Nafaka (Food Products)</option> <option value="feeds" data-translate="animal_feeds">Bazed Animal Feeds</option> <option value="both" data-translate="both_divisions">Both Divisions</option> </select>
         </div>

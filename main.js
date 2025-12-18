@@ -203,7 +203,44 @@
       e.preventDefault();
       
       const formMessage = document.getElementById('form-message');
-      formMessage.textContent = translations[currentLanguage].form_success;
+      
+      // Get form values
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const phone = document.getElementById('phone').value.trim();
+      const location = document.getElementById('location').value.trim();
+      const division = document.getElementById('division').value;
+      const userType = document.getElementById('user-type').value;
+      const message = document.getElementById('message').value.trim();
+      
+      // Validate required fields
+      if (!name || !email || !phone || !location || !division || !userType || !message) {
+        formMessage.textContent = 'Please fill in all required fields.';
+        formMessage.className = 'mt-4 p-4 rounded-lg bg-red-50 text-red-700 border border-red-200';
+        formMessage.classList.remove('hidden');
+        return;
+      }
+      
+      // Validate phone format
+      const phoneRegex = /^[0-9+\-\s\(\)]+$/;
+      if (!phoneRegex.test(phone) || phone.length < 10) {
+        formMessage.textContent = 'Please enter a valid phone number.';
+        formMessage.className = 'mt-4 p-4 rounded-lg bg-red-50 text-red-700 border border-red-200';
+        formMessage.classList.remove('hidden');
+        return;
+      }
+      
+      // Validate email format
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailRegex.test(email)) {
+        formMessage.textContent = 'Please enter a valid email address.';
+        formMessage.className = 'mt-4 p-4 rounded-lg bg-red-50 text-red-700 border border-red-200';
+        formMessage.classList.remove('hidden');
+        return;
+      }
+      
+      // If all validations pass
+      formMessage.textContent = 'Thank you! Your message has been sent successfully.';
       formMessage.className = 'mt-4 p-4 rounded-lg bg-green-50 text-green-700 border border-green-200';
       formMessage.classList.remove('hidden');
       
